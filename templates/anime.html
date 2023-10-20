@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading Animation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading"></div>
+	<h2>Please wait... <span id="timer"></span></h2>
+    </div>
+    <div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <h3>Click on OK button</h3>
+	<a href="{{ url_for('index')}}">
+        <button onclick="hideModal()">OK</button>
+	</a>
+    </div>
+</div>
+
+
+    <script src="{{ url_for('static', filename='script') }}"></script>
+        
+</body>
+</html>
+

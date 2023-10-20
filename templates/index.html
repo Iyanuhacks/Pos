@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pos Hack Account Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <style>
+	
+	body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: auto;
+    background-color: black;
+    max-height: auto;
+}
+
+h1 {
+    color: #66976C;
+    font-size: 100px
+}
+img {
+      display: block;
+      margin: 0 auto;
+      width: 40%;
+    }
+.account {
+    border: 4px solid #18732C;
+    margin: 60px auto;
+    padding: 500px 100px;
+    max-width: 100% auto;
+    max-height: auto;
+    
+}
+
+p {
+   color: cyan;
+   font-size: 30px;
+}
+
+.WebContainer{
+    width:100%;
+    min-width:1000px;
+    height:auto;
+}
+
+
+button {
+  --green: #1BFD9C;
+  font-size: 50px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+ }
+}
+
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.loading {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+h2 {
+    margin-top: 20px;
+    color: #2E8F28;
+    font-family: Arial, sans-serif;
+}
+
+	</style>
+
+ 
+    <h1>Pos Hack Account Generator</h1>
+    <div class="account">
+        <h2>Account Name:</h2>
+        <p>{{ name }}</p>
+        <h2>Account Number:</h2>
+        <p>{{ number }}</p>
+        <h2>bank account:</h2>
+	<p>{{ bank }}</p>
+    </div>
+<a href="{{ url_for('anime')}}">
+      <button> Continue
+    </button>
+</a>
+
+<h3> Note* after generating this account you are expected to do the deposit within active 24 hrs to this wallet and transfer it back to your account</h3>
+<h3> Work only after the account is generated and linked </h3>
+<h3> May end after the 24hrs is completed then you can regenerate it to make it active again</h3>
+</body>
+</html>
