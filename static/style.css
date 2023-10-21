@@ -197,7 +197,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f2f2f2;
+    background-color: #1A4D13;
 }
 
 .loading {
@@ -215,8 +215,8 @@ body {
 }
 
 h2 {
-    margin-top: 20px;
-    color: #333;
+    margin-top: 40px;
+    color: white;
     font-family: Arial, sans-serif;
 }
 

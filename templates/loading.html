@@ -1,0 +1,59 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html>
+<head>
+    <title>Loading Animation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading"></div>
+        <h2>Please wait...</h2>
+    </div>
+
+    
+    <style>
+	.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1A4D13;
+}
+
+.loading {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+h2 {
+    margin-top: 40px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+    </style> 
+
+<!--    <div class="">
+        <img src="{{ url_for('static', filename='icegif-502.gif') }}" alt="Please Wait">
+	</div>    -->
+    
+    <script>
+        
+        setTimeout(function() {
+            window.location.href = "{{ url_for('index') }}";
+        }, 4000);
+    </script>
+	
+
+</body>
+</html>
